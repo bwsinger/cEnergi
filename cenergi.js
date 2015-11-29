@@ -189,6 +189,53 @@ $(document).ready(function () {
     
     
     
+//Tag Filter for Projects
+    //CONSUMER
+    $('.tra').click(function(){
+        $(this).toggleClass('selected');
+        $('.transportation').toggleClass('selected');
+    });
+    $('.res').click(function(){
+        $(this).toggleClass('selected');
+        $('.residential').toggleClass('selected');
+    });
+    $('.com').click(function(){
+        $(this).toggleClass('selected');
+        $('.commercial').toggleClass('selected');
+    });
+    
+    //ENERGY
+    $('.fue').click(function(){
+        $(this).toggleClass('selected');
+        $('.fuel').toggleClass('selected');
+    });
+    $('.foo').click(function(){
+        $(this).toggleClass('selected');
+        $('.food').toggleClass('selected');
+    });
+    $('.wat').click(function(){
+        $(this).toggleClass('selected');
+        $('.water').toggleClass('selected');
+    });
+    
+    //INTERFACES
+    $('.tan').click(function(){
+        $(this).toggleClass('selected');
+        $('.tangible').toggleClass('selected');
+    });
+    $('.web').click(function(){
+        $(this).toggleClass('selected');
+        $('.website').toggleClass('selected');
+    });
+    $('.mob').click(function(){
+        $(this).toggleClass('selected');
+        $('.mobile').toggleClass('selected');
+    });
+        
+    
+    
+    
+    
     //Make project divs clickable
     /*$('.pcontainer').hover(function () {
         $().

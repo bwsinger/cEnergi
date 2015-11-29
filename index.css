@@ -184,6 +184,7 @@ nav li a:hover {
     background-size: cover;
     background-attachment: fixed;
     min-width: 100%;
+    margin-right: 100px;
     min-height: 100%;
     z-index: -10;
     padding-top: 75px;
@@ -229,7 +230,7 @@ nav li a:hover {
     overflow: hidden;
 }
 
-#projects h2 {
+.proj h2 {
     float: left; 
     margin-bottom: 5px;
     width: 100%;
@@ -250,7 +251,7 @@ nav li a:hover {
     margin-bottom: 5px; 
 }
 
-#projects p {
+.proj p {
     /*font-size: .9em;*/
     margin-top: 10px;
     color: #37474F;
@@ -328,6 +329,63 @@ nav li a:hover {
 .close span {
     font-size: 1.5em;
     color: darkred;
+}
+
+.main {
+    width: auto;
+    margin-right: 220px;
+}
+
+/* SIDEBAR ----------------------*/
+
+.sidebar {
+    position: fixed;
+    float: right;
+    right: 0;
+    top: 0;
+    width: 220px;
+    height: 100%;
+    background-color: white;
+    padding: 20px;
+    margin-top: 75px;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.sidebar img {
+    padding-bottom: 10px;
+}
+
+.sidebar h2 {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    text-align: left;
+    color: #E48125;
+}
+#consumer {
+    padding-top: 0px;
+}
+
+.sidebar li {
+    padding: 0px;
+    text-decoration: none;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #E48125;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    text-align: left;
+}
+
+.selected {
+    background: #E48125;
+    color: white;
+}
+.selected h2, .selected h3, .selected li {
+    color: white;
 }
 
 
