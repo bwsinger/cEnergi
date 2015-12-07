@@ -190,47 +190,64 @@ $(document).ready(function () {
     
     
 //Tag Filter for Projects
-    //CONSUMER
-    $('.tra').click(function(){
-        $(this).toggleClass('selected');
-        $('.transportation').toggleClass('selected');
-    });
-    $('.res').click(function(){
-        $(this).toggleClass('selected');
-        $('.residential').toggleClass('selected');
-    });
-    $('.com').click(function(){
-        $(this).toggleClass('selected');
-        $('.commercial').toggleClass('selected');
+    
+    $('input[type=radio]').click(function() {
+        //CONSUMER
+        if( $('input[value=Transportation]').prop('checked') ) {
+            $('.transportation').addClass('selected');
+            $('.residential').removeClass('selected');
+            $('.commercial').removeClass('selected');
+        };
+        if( $('input[value=Residential]').prop('checked') ) {
+            $('.residential').addClass('selected');
+            $('.transportation').removeClass('selected');
+            $('.commercial').removeClass('selected');
+            
+        };
+        if( $('input[value=Commercial]').prop('checked') ) {
+            $('.commercial').addClass('selected');
+            $('.transportation').removeClass('selected');
+            $('.residential').removeClass('selected');
+            
+        };
+        
+        //ENERGY
+        if( $('input[value=Fuel]').prop('checked') ) {
+            $('.fuel').addClass('selected');
+            $('.water').removeClass('selected');
+            $('.food').removeClass('selected');
+        };
+        if( $('input[value=Water]').prop('checked') ) {
+            $('.water').addClass('selected');
+            $('.fuel').removeClass('selected');
+            $('.food').removeClass('selected');
+        };
+        if( $('input[value=Food]').prop('checked') ) {
+            $('.food').addClass('selected');
+            $('.fuel').removeClass('selected');
+            $('.water').removeClass('selected');
+        };
+        
+        //INTERFACES
+        if( $('input[value=Tangible]').prop('checked') ) {
+            $('.tangible').addClass('selected');
+            $('.website').removeClass('selected');
+            $('.mobile').removeClass('selected');
+        };
+        if( $('input[value=Website]').prop('checked') ) {
+            $('.website').addClass('selected');
+            $('.tangible').removeClass('selected');
+            $('.mobile').removeClass('selected');
+        };
+        if( $('input[value=Mobile]').prop('checked') ) {
+            $('.mobile').addClass('selected');
+            $('.tangible').removeClass('selected');
+            $('.website').removeClass('selected');
+        };
     });
     
-    //ENERGY
-    $('.fue').click(function(){
-        $(this).toggleClass('selected');
-        $('.fuel').toggleClass('selected');
-    });
-    $('.foo').click(function(){
-        $(this).toggleClass('selected');
-        $('.food').toggleClass('selected');
-    });
-    $('.wat').click(function(){
-        $(this).toggleClass('selected');
-        $('.water').toggleClass('selected');
-    });
     
-    //INTERFACES
-    $('.tan').click(function(){
-        $(this).toggleClass('selected');
-        $('.tangible').toggleClass('selected');
-    });
-    $('.web').click(function(){
-        $(this).toggleClass('selected');
-        $('.website').toggleClass('selected');
-    });
-    $('.mob').click(function(){
-        $(this).toggleClass('selected');
-        $('.mobile').toggleClass('selected');
-    });
+    
         
     
     
