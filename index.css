@@ -204,6 +204,7 @@ nav li a:hover {
 
 .proj {
     display: inline-block;
+    position: relative;
     float: left;
     height: auto;
     min-height: 490px;
@@ -224,7 +225,7 @@ nav li a:hover {
 }
 
 .desc {
-    /*min-height: 200px;*/
+    position: relative;
     margin: 15px;
 }
 
@@ -260,6 +261,16 @@ nav li a:hover {
     color: #37474F;
 }
 
+.proj span {
+    color: #E48125;
+    padding-right: 10px;
+}
+.bottom {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
 .eco {
     height: 30px;
     width: auto;
@@ -278,6 +289,9 @@ nav li a:hover {
     background-repeat: no-repeat;
 }
 
+
+
+
 .tooltip {
 	position:absolute;
 	border:1px solid #333;
@@ -289,6 +303,7 @@ nav li a:hover {
 	font-size:.75em;
 }
 
+/* LIGHTBOXES ---------------------------*/
 
 .backdrop { /*code by Tony Lea http://www.tonylea.com/2011/how-to-create-your-own-jquery-lightbox/*/
     position:absolute;
@@ -408,7 +423,7 @@ nav li a:hover {
     background: #E48125;
     color: white;
 }
-.selected h2, .selected h3, .selected li {
+.selected h2, .selected h3, .selected li, .selected span {
     color: white;
 }
 
