@@ -36,7 +36,7 @@ a:hover {
 
 nav {
     width: 100%;
-    height: 40px;
+    height: 60px;
     /*background-color: rgba(255, 255, 255, 0.75);*/
     padding: 0px;
     position: fixed;
@@ -74,7 +74,6 @@ nav li a {
     display: inline-block;
     height: 30px;
 }
-
 nav li a:hover {
     color: #E48125;
 }
@@ -94,9 +93,33 @@ nav li a:hover {
     background-color: rgba(0, 0, 0, 0);
 }
 
-.active {
+.color1, .active1 {
     color: #E48125;
 }
+.color2, .active2 {
+    color: #D15932;
+}
+.color3, .active3 {
+    color: #C04B2A;
+}
+
+button {
+    background: transparent;
+    border-radius: 7px;
+    font-size: 1em;
+    color: #E48125;
+    padding: 10px;
+    cursor: pointer;
+    border-style: solid;
+    border-color: #E48125;
+}
+button:hover {
+    background: #E48125;
+    border-bottom-color: #D15932;
+    color: white;
+}
+
+
 
 .noNav {
     background-color: rgba(0, 0, 0, 0);
@@ -163,12 +186,8 @@ nav li a:hover {
     margin-left: auto;
     margin-right: auto;
     font-weight: 700px;
-    font-size: 1.15em;
-    color: #37474F;
-}
-
-#bannerCover a {
-    padding: 5px;
+    /*font-size: 1.15em;
+    color: #37474F;*/
 }
 
 
@@ -303,7 +322,7 @@ nav li a:hover {
 	font-size:.75em;
 }
 
-/* LIGHTBOXES ---------------------------*/
+/* LIGHTBOXES -------------------*/
 
 .backdrop { /*code by Tony Lea http://www.tonylea.com/2011/how-to-create-your-own-jquery-lightbox/*/
     position:absolute;
@@ -321,13 +340,19 @@ nav li a:hover {
  
 .box { /*code by Tony Lea*/
     position:fixed;
-    top:20%;
+    top:15%;
     left:25%;
     width: 50%;
     min-height: 100px;
     background:#ECEFF1;
+    font-size: 1em;
+    text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
     z-index:51;
-    padding:20px;
+    padding:30px;
     /*-webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;*/
@@ -336,16 +361,21 @@ nav li a:hover {
     box-shadow:0px 0px 5px #444444;
     display:none;
 }
+
+.box p {
+    line-height: 1.25em;
+}
  
 .close { /*code by Tony Lea*/
-    float:right;
-    margin-left:10px;
-    margin-bottom:10px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding-right: 10px;
     cursor:pointer;
 }
 
 .close span {
-    font-size: 1.5em;
+    font-size: 2em;
     color: darkred;
 }
 
@@ -374,49 +404,45 @@ nav li a:hover {
     padding-bottom: 10px;
 }
 
+.sidebar #filtertitle {
+    color: #37474F;
+    font-size: 1em;
+    padding-bottom: 20px;
+}
+
 .sidebar h2 {
     padding-top: 15px;
     padding-bottom: 5px;
     text-align: left;
-    color: #E48125;
+    /*color: #E48125;*/
 }
 
 #consumer {
     padding-top: 0px;
 }
 
+/*.sidebar form {text-align: left;}
+.sidebar input {display: none;}
+.sidebar label:hover {background-color: #EEE;}
+.sidebar label {cursor: pointer;}
+.sidebar span {padding: 0px;}
+.sidebar label:before {background-color: #E48125;}
+.sidebar input:checked + span {background-color: #E48125; color: white;}*/
 
 
-
-.sidebar form {
+.sidebar ul {
     text-align: left;
+    list-style: none;
 }
 
-.sidebar input {
-    display: none;
-}
-.sidebar label:hover {
-    background-color: #EEE;
-}
-
-.sidebar label {
+.sidebar li {
+    padding: 3px;
     cursor: pointer;
 }
 
-.sidebar span {
-    padding: 0px;
+.sidebar li:hover {
+    color: #DDD;
 }
-
-.sidebar label:before {
-    background-color: #E48125;
-}
-
-.sidebar input:checked + span {
-    background-color: #E48125;
-    color: white;
-}
-
-
 
 
 .selected {
@@ -624,6 +650,7 @@ footer {
     height: 40px;
     font-size: .85em;
     font-weight: 400;
+    /*z-index: 5;*/
 }
 
 #contact {
