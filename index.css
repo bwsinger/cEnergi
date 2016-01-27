@@ -7,13 +7,15 @@
 
 
 
-
-* {
+*, *:before, *:after {
     margin: 0;
     padding: 0;
     z-index: 1;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+
       
 body {
     min-height: 100%;
@@ -240,7 +242,7 @@ button:hover {
     clear: both;
 }
 .proj:hover {
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.4);
 }
 
 .desc {
@@ -280,7 +282,7 @@ button:hover {
     color: #37474F;
 }
 
-.proj span {
+.bottom span {
     color: #E48125;
     padding-right: 10px;
 }
@@ -594,9 +596,11 @@ button:hover {
 
 #about img {
     display: block;
+    max-height: 100px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 20px;
+    padding: 10px;
+    background: white;
 }
 
 #about a {
@@ -682,7 +686,7 @@ footer {
 }
 .row:after {
     content: "";
-    display: table;
+    display: block;
     clear: both;
 }
 
