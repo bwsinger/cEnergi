@@ -107,8 +107,8 @@ nav li a:hover {
 
 button {
     background: transparent;
-    border-radius: 7px;
-    font-size: 1em;
+    border-radius: 30px;
+    font-size: .9em;
     color: #E48125;
     padding: 10px;
     cursor: pointer;
@@ -217,7 +217,7 @@ button:hover {
 }
 
 .pcontainer {
-    width: 880px;
+    width: auto;
     margin-left: auto;
     margin-left: auto;
     display: inline-block;
@@ -228,7 +228,7 @@ button:hover {
     position: relative;
     float: left;
     height: auto;
-    min-height: 490px;
+    min-height: 520px;
     width: 400px;
     margin: 20px;
     text-align: left;
@@ -317,11 +317,11 @@ button:hover {
 	position:absolute;
 	border:1px solid #333;
     background-color:rgba(22, 22, 22, 0.8);
-	/*background-color:#161616;*/
 	border-radius:5px;
 	padding:10px;
 	color:#fff;
 	font-size:.75em;
+    z-index: 1000;
 }
 
 /* LIGHTBOXES -------------------*/
@@ -342,22 +342,16 @@ button:hover {
  
 .box { /*code by Tony Lea*/
     position:fixed;
-    top:15%;
+    top:10%;
     left:25%;
     width: 50%;
     min-height: 100px;
     background:#ECEFF1;
-    font-size: 1em;
-    text-align: justify;
-    hyphens: auto;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
     z-index:51;
-    padding:30px;
-    /*-webkit-border-radius: 5px;
+    padding:40px;
+    -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
-    border-radius: 5px;*/
+    border-radius: 5px;
     -moz-box-shadow:0px 0px 5px #444444;
     -webkit-box-shadow:0px 0px 5px #444444;
     box-shadow:0px 0px 5px #444444;
@@ -365,20 +359,20 @@ button:hover {
 }
 
 .box p {
-    line-height: 1.25em;
+    font-size: 1em;
+    line-height: 1.35em;
+    text-align: left;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
 }
  
 .close { /*code by Tony Lea*/
     position: absolute;
-    top: 0px;
-    right: 0px;
-    padding-right: 10px;
-    cursor:pointer;
-}
-
-.close span {
-    font-size: 2em;
-    color: darkred;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
 }
 
 .main {
@@ -451,7 +445,23 @@ button:hover {
     background: #E48125;
     color: white;
 }
-.selected h2, .selected h3, .selected li, .selected span {
+.selected h2, .selected h3, .selected li, .selected p, .selected span {
+    color: white;
+}
+
+.selected2 {
+    background: #E48125;
+    color: white;
+}
+.selected2 h2, .selected2 h3, .selected2 li, .selected2 p, .selected span {
+    color: white;
+}
+
+.selected3 {
+    background: #E48125;
+    color: white;
+}
+.selected3 h2, .selected3 h3, .selected3 li, .selected3 p, .selected span {
     color: white;
 }
 
@@ -594,7 +604,12 @@ button:hover {
     line-height: 175%;
 }
 
-#about img {
+#partners .collab {
+    background: white;
+    min-height: 100px;
+}
+
+#partners img {
     display: block;
     max-height: 100px;
     margin-left: auto;

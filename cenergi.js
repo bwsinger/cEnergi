@@ -12,11 +12,11 @@ $(document).ready(function () {
     
     var thermoostat = "<h3>Project Summary</h3><br>       cEnergi and the UC Davis Energy Conservation Office (ECO) developed a web application called TherMOOstat (cow-themed as cows are iconic to Davis), which allows occupants to report their thermal comfort and satisfaction with indoor temperatures, and to vote for conservative changes in thermostat settings. Facilities Management analyzes TherMOOstat data along with indoor and outdoor temperatures and work orders submitted to optimize thermostat settings and detect system issues for greater efficiency and occupant comfort.           <br><br><a target='_blank' href='http://eco.ucdavis.edu/thermoostat'><button>Visit ECO</button></a>                    <br><br>        <h3>Research Summary</h3><br>       TherMOOstat data have enabled Facilities Management to identify and fix inefficiencies in HVAC systems on campus. cEnergi is currently assessing whether the opportunity to give feedback to Facilities Management via TherMOOstat improves occupant satisfaction with indoor temperatures. We also use TherMOOstat as a platform to evaluate the effectiveness of message framing and persuasive imagery on occupants’ willingness to conserve, as measured by votes to change thermostat settings in an energy-conservative direction.";
     
-    var ecofeedback = "<h3>Research Summary</h3><br>       Eco-driving has been identified as a promising strategy for reductions in fossil fuel consumption and carbon emissions and in-vehicle feedback has been the predominant intervention used to promote eco-driving. Unfortunately, academic research on eco-driving feedbackhas been largely devoid of behavior and design theories. cEnergi assessed eco-driving feedback systems currently available in vehicles sold in the US. We created a typology of in-vehicle eco-driving feedback based on behavioral principles and design theories, which can be used in subsequent comparative research to determine which feedback types are most effective for which behaviors and among which drivers.               <br><br><a target='_blank' href='img/Projects/Research/Feedback_Typology_Poster.pdf'><button>Poster</button></a>";
+    var ecofeedback = "<h3>Research Summary</h3><br>       Eco-driving has been identified as a promising strategy for reductions in fossil fuel consumption and carbon emissions and in-vehicle feedback has been the predominant intervention used to promote eco-driving. Unfortunately, academic research on eco-driving feedbackhas been largely devoid of behavior and design theories. cEnergi assessed eco-driving feedback systems currently available in vehicles sold in the US. We created a typology of in-vehicle eco-driving feedback based on behavioral principles and design theories, which can be used in subsequent comparative research to determine which feedback types are most effective for which behaviors and among which drivers.               <br><br><a target='_blank' href='img/Projects/Feedback_Typology_Poster.jpg'><button>Poster</button></a>                 <a target='_blank' href='http://ncst.ucdavis.edu/white-paper/ucd-dot-wp1-3a/'><button>See Broader Research</button></a>";
     
     var triptracker = "<h3>Project Summary</h3><br>       About half of all personal vehicle trips in the US are only three miles or less. Trip Tracker promotes awareness of the impacts of personal transportation choices--focusing on local trips (less than 3 miles). The app provides various metrics (e.g., calories burned, co2 emissions, and fuel usage), builds landscape appreciation, and reinforces users' commitment to change behavior through goal-setting with friends.";
     
-    var obdenergy = "<h3>Project Summary</h3><br>       OBDEnergy, developed by Sumayyah Ahmed at cEnergi, is a hardware and software eco-feedback system that aims to increase awareness of environmental impacts of personal driving. It consists of an Android application that communicates with a vehicle engine via a  Bluetooth-enabled OBD-II plug-in  device. The UI has three screens, including a 'Metrics' screen that summarizes trip level data and a 'Graphs' screen that shows metrics accumulated over time (gallons of gas, kilos of carbon emitted, and trees required to offset that carbon).              <br><br>        <h3>Research Summary</h3><br>       In user testing, twenty-six drivers described their understanding of environmental impacts of driving before and after using the OBDEnergy. Before OBDEnergy, participants discussed impacts in abstract, global terms (pollution, global warming). After OBDEnergy, participants appealed to concrete reference points (gallons of gas, trees required) with calculations and comparisons. We conclude that user-centered eco-driving feedback can contribute to pro-environmental behavior via increased awareness of the concrete environmental impacts of driving.                <br><br><a target='_blank' href='https://www.dropbox.com/s/cjkjkk4rxnzliw5/HCII%20OBD%20Energy.pdf?dl=0'><button>Research Paper</button></a>";
+    var obdenergy = "<h3>Project Summary</h3><br>       OBDEnergy, developed by Sumayyah Ahmed at cEnergi, is a hardware and software eco-feedback system that aims to increase awareness of environmental impacts of personal driving. It consists of an Android application that communicates with a vehicle engine via a  Bluetooth-enabled OBD-II plug-in  device. The UI has three screens, including a 'Metrics' screen that summarizes trip level data and a 'Graphs' screen that shows metrics accumulated over time (gallons of gas, kilos of carbon emitted, and trees required to offset that carbon).              <br><br>        <h3>Research Summary</h3><br>       In user testing, twenty-six drivers described their understanding of environmental impacts of driving before and after using the OBDEnergy. Before OBDEnergy, participants discussed impacts in abstract, global terms (pollution, global warming). After OBDEnergy, participants appealed to concrete reference points (gallons of gas, trees required) with calculations and comparisons. We conclude that user-centered eco-driving feedback can contribute to pro-environmental behavior via increased awareness of the concrete environmental impacts of driving.                <br><br><a target='_blank' href='http://download.springer.com/static/pdf/304/chp%253A10.1007%252F978-3-319-20886-2_37.pdf?originUrl=http%3A%2F%2Flink.springer.com%2Fchapter%2F10.1007%2F978-3-319-20886-2_37&token2=exp=1453935099~acl=%2Fstatic%2Fpdf%2F304%2Fchp%25253A10.1007%25252F978-3-319-20886-2_37.pdf%3ForiginUrl%3Dhttp%253A%252F%252Flink.springer.com%252Fchapter%252F10.1007%252F978-3-319-20886-2_37*~hmac=943465bad4e0b41939accff7da313ff5f868c01da35dfc65f904109cecd6afe1'><button>Research Paper</button></a>";
     
     var wvenergy = "<h3>Project Summary</h3><br>       West Village (WV) is a mixed use zero net energy (ZNE) development at UC Davis that has yet to achieve ZNE. cEnergi developed an office energy feedback system at the Plug-in Hybrid & Electric Vehicle (PH&EV) Research Center at WV that consists of a flag ceremony conducted three times per day, featuring a red or green flag raised outside the office to reflect recent consumption in relation to a ZNE performance goal modeled for the office. The flag ceremony is accompanied by a 15 second music clip, The Imperial March (Darth Vader theme song) to mark overconsumption and Eye of the Tiger (Rocky theme song) to celebrate on-target performance.                 <br><br>        <h3>Research Summary</h3><br>       The effectiveness of the flag feedback was evaluated by a follow-up survey and focus group, as well as quantitative analyses of energy consumption before, during, and after the feedback intervention. Statistically significant reduction in average hourly energy consumption was observed during the feedback intervention. The follow-up survey and focus group revealed strong affinity for the feedback system and interesting implications for the design of eco-feedback in the contexts of offices and buildings with renewable on-site energy generation.";
     
@@ -78,35 +78,35 @@ $(document).scroll(function() {
 
         console.log(names);
 
-        var lbl = document.createElement('span')
-        lbl.className = 'tooltip' //.overlay pos abs
-        lbl.style.left = this.offsetLeft
-        lbl.textContent = names
-        this.parentNode.appendChild(lbl)
+        var lbl = document.createElement('span');
+        lbl.className = 'tooltip'; //.overlay pos abs
+        lbl.style.left = this.offsetLeft;
+        lbl.textContent = names;
+        this.parentNode.appendChild(lbl);
 
         //$('#label').text(names);
         //$('#label').css('visibility', 'visible');
 
     }, function () {
         //$('#label').css('visibility', 'hidden');
-        var removethese = this.parentNode.getElementsByClassName('tooltip')
+        var removethese = this.parentNode.getElementsByClassName('tooltip');
 
         for (var i = 0; i < removethese.length; i++) {
             this.parentNode.removeChild(removethese[i])
-        }
+            }
 
-    }).mousemove(function (e) {
-        var mousex = e.pageX + 20; //Get X coordinates
-        var mousey = e.pageY + 10; //Get Y coordinates
-        $('.tooltip').css({
-            top: mousey,
-            left: mousex
-        })
+        }).mousemove(function (e) {
+            var mousex = e.pageX - 45; //Get X coordinates
+            var mousey = e.pageY - 280; //Get Y coordinates
+            $('.tooltip').css( {
+                top: mousey,
+                left: mousex
+            });
 
 
 
-        return false;
-    });
+            return false;
+        });
 
 
     
@@ -201,12 +201,14 @@ $(document).scroll(function() {
     
     
 //Tag Filter for Projects
+    //$('.transportation', '.commercial', '.residential') = false;
     
     $('.sidebar li').click(function() {
         //CONSUMER
         if( $(this).hasClass('tra') ) {
             $('.transportation').toggleClass('selected');
             $(this).toggleClass('selected');
+            //$('.transportation').insertBefore( $('.proj').first() );
         };
         if( $(this).hasClass('res') ) {
             $('.residential').toggleClass('selected');
@@ -219,101 +221,36 @@ $(document).scroll(function() {
         
         //ENERGY
         if( $(this).hasClass('fue') ) {
-            $('.fuel').toggleClass('selected');
+            $('.fuel').toggleClass('selected2');
             $(this).toggleClass('selected');
         };
         if( $(this).hasClass('wat') ) {
-            $('.water').toggleClass('selected');
+            $('.water').toggleClass('selected2');
             $(this).toggleClass('selected');
         };
         if( $(this).hasClass('foo') ) {
-            $('.food').toggleClass('selected');
+            $('.food').toggleClass('selected2');
             $(this).toggleClass('selected');
         };
         
         //INTERFACES
         if( $(this).hasClass('tan') ) {
-            $('.tangible').toggleClass('selected');
+            $('.tangible').toggleClass('selected3');
             $(this).toggleClass('selected');
         };
         if( $(this).hasClass('web') ) {
-            $('.website').toggleClass('selected');
+            $('.website').toggleClass('selected3');
             $(this).toggleClass('selected');
         };
         if( $(this).hasClass('mob') ) {
-            $('.mobile').toggleClass('selected');
+            $('.mobile').toggleClass('selected3');
             $(this).toggleClass('selected');
         };
+        
+        
+        //Reordering
+        
     });
-    
-    /*
-    $('input[type=radio]').click(function() {
-        //CONSUMER
-        if( $('input[value=Transportation]').prop('checked') ) {
-            $('.transportation').addClass('selected');
-            $('.residential').removeClass('selected');
-            $('.commercial').removeClass('selected');
-        };
-        if( $('input[value=Residential]').prop('checked') ) {
-            $('.residential').addClass('selected');
-            $('.transportation').removeClass('selected');
-            $('.commercial').removeClass('selected');
-            
-        };
-        if( $('input[value=Commercial]').prop('checked') ) {
-            $('.commercial').addClass('selected');
-            $('.transportation').removeClass('selected');
-            $('.residential').removeClass('selected');
-            
-        };
-        
-        //ENERGY
-        if( $('input[value=Fuel]').prop('checked') ) {
-            $('.fuel').addClass('selected');
-            $('.water').removeClass('selected');
-            $('.food').removeClass('selected');
-        };
-        if( $('input[value=Water]').prop('checked') ) {
-            $('.water').addClass('selected');
-            $('.fuel').removeClass('selected');
-            $('.food').removeClass('selected');
-        };
-        if( $('input[value=Food]').prop('checked') ) {
-            $('.food').addClass('selected');
-            $('.fuel').removeClass('selected');
-            $('.water').removeClass('selected');
-        };
-        
-        //INTERFACES
-        if( $('input[value=Tangible]').prop('checked') ) {
-            $('.tangible').addClass('selected');
-            $('.website').removeClass('selected');
-            $('.mobile').removeClass('selected');
-        };
-        if( $('input[value=Website]').prop('checked') ) {
-            $('.website').addClass('selected');
-            $('.tangible').removeClass('selected');
-            $('.mobile').removeClass('selected');
-        };
-        if( $('input[value=Mobile]').prop('checked') ) {
-            $('.mobile').addClass('selected');
-            $('.tangible').removeClass('selected');
-            $('.website').removeClass('selected');
-        };
-    });*/
-    
-    
-    
-        
-    
-    
-    
-    
-    //Make project divs clickable
-    /*$('.pcontainer').hover(function () {
-        $().
-        
-    });*/
     
     
 
