@@ -8,7 +8,7 @@ $(document).ready(function () {
     
     var ceed = "<h3>Project Summary</h3><br>       The UC Davis Energy Conservation Office (ECO) developed the Campus Energy Educational Dashboard (CEED) to meet the requirements of a wide range of stakeholders. CEED is a map-based dashboard that shows energy data for campus buildings. Energy use intensity metrics, real-time demand data, and historic data are available for engineers and data analyts. For students and staff, CEED prioritizes usability and aesthetics, provides context for the data, and  layers information in successive levels of detail.                     <br><br><a target='_blank' href='http://ceed.ucdavis.edu/'><button>Visit the Dashboard</button></a>                <br><br>        <h3>Research Summary</h3><br>       We have supported ECO in their iterative design of CEED by conducting user testing. For example, in an online experiment with 287 participants, we discovered that single variable energy use data for campus buildings displayed in a map-based format is rated as more interesting, more fun, and even more trustworthy compared to the same data displayed in a traditional bar graph format, while still being comparable in terms of ease of use and interpretation. However, when an additional variable is added to the map visualization it is more difficult for users to interpret than is a traditional bar chart visualization of the same data.";
     
-    var evexplorer = "<h3>Project Summary</h3><br>       cEnergi's partners at the Plug-in Hybrid & Electric Vehicle Research Center developed EV Explorer, a website that enables users to compare fuel costs for different vehicles based on their own commuting patterns, charging opportunities, vehicle mileage, and local fuel prices. All these inputs can be adjusted by the user for a tailored estimate of annual fuel costs for up to four user-selected vehicles at a time. Default vehicle comparisons promote consideration of plug-in hybrid electric and fully electric vehicles (PEVs). <br><br><a target='_blank' href='http://gis.its.ucdavis.edu/evexplorer/'><button>Explore the Site</button></a>                <br><br>        <h3>Research Summary</h3><br>       We evaluated EV Explorer through online experimentation, gauging users’ perceptions—before and after using the website—of their current fuel costs, potential savings with PEVs, attitude toward PEV charging, and intention to buy or lease a PEV in the future. Statistically significant changes in each of these variables validate EV Explorer as an educational tool and a persuasive eco-feedback intervention to promote the adoption of PEVs.";
+    var evexplorer = "<h3>Project Summary</h3><br>       cEnergi's partners at the Plug-in Hybrid & Electric Vehicle Research Center developed EV Explorer, a website that enables users to compare fuel costs for different vehicles based on their own commuting patterns, charging opportunities, vehicle mileage, and local fuel prices. All these inputs can be adjusted by the user for a tailored estimate of annual fuel costs for up to four user-selected vehicles at a time. Default vehicle comparisons promote consideration of plug-in hybrid electric and fully electric vehicles (PEVs). <br><br><a target='_blank' href='http://gis.its.ucdavis.edu/evexplorer/'><button>Explore the Site</button></a>                <br><br>        <h3>Research Summary</h3><br>       We evaluated EV Explorer through online experimentation, gauging users’ perceptions—before and after using the website—of their current fuel costs, potential savings with PEVs, attitude toward PEV charging, and intention to buy or lease a PEV in the future. Statistically significant changes in each of these variables validate EV Explorer as an educational tool and a persuasive eco-feedback intervention to promote the adoption of PEVs. <br><br><a target='_blank' href='https://its.ucdavis.edu/research/publications/?frame=https%3A%2F%2Fitspubs.ucdavis.edu%2Findex.php%2Fresearch%2Fpublications%2Fpublication-detail%2F%3Fpub_id%3D2569'><button>Research Paper</button></a>";
     
     var thermoostat = "<h3>Project Summary</h3><br>       cEnergi and the UC Davis Energy Conservation Office (ECO) developed a web application called TherMOOstat (cow-themed as cows are iconic to Davis), which allows occupants to report their thermal comfort and satisfaction with indoor temperatures, and to vote for conservative changes in thermostat settings. Facilities Management analyzes TherMOOstat data along with indoor and outdoor temperatures and work orders submitted to optimize thermostat settings and detect system issues for greater efficiency and occupant comfort.           <br><br><a target='_blank' href='http://eco.ucdavis.edu/thermoostat'><button>Visit ECO</button></a>                    <br><br>        <h3>Research Summary</h3><br>       TherMOOstat data have enabled Facilities Management to identify and fix inefficiencies in HVAC systems on campus. cEnergi is currently assessing whether the opportunity to give feedback to Facilities Management via TherMOOstat improves occupant satisfaction with indoor temperatures. We also use TherMOOstat as a platform to evaluate the effectiveness of message framing and persuasive imagery on occupants’ willingness to conserve, as measured by votes to change thermostat settings in an energy-conservative direction.";
     
@@ -60,6 +60,47 @@ $(document).scroll(function() {
 });
 
 
+    
+    
+(function() { //Code by Konstantin Nikkari + Zachary Green (https://teamtreehouse.com/community/topic-text-with-changing-word-jquery-or-css)
+
+    // List your words here:
+    var words = [
+        '<img src="img/Icons/Homepage/airplanes.png" width="100" height="100">',
+        '<img src="img/Icons/Homepage/car2.png" width="100" height="100">',
+        '<img src="img/Icons/Homepage/bike.png" width="100" height="100">',
+        '<img src="img/Icons/Homepage/commercial.png" width="100" height="100">',
+        '<img src="img/Icons/Homepage/ferry.png" width="100" height="100">',
+        '<img src="img/Icons/Homepage/food.png" width="100" height="100">',
+        '<img src="img/Icons/Homepage/gas.png" width="100" height="100">',
+        '<img src="img/Icons/Homepage/home.png" width="100" height="100">',
+        '<img src="img/Icons/Homepage/mobile.png" width="100" height="100">',
+        '<img src="img/Icons/Homepage/public_transport.png" width="100" height="100">',
+        '<img src="img/Icons/Homepage/tactile.png" width="100" height="100">',
+        '<img src="img/Icons/Homepage/walk.png" width="100" height="100">',
+        '<img src="img/Icons/Homepage/water.png" width="100" height="100">',
+        '<img src="img/Icons/Homepage/web.png" width="100" height="100">',
+        ], i = 0,
+         delay = 2;
+
+    setInterval(function() {
+        $('#iconChange').fadeOut( function() {
+            var word = words[i=(i+1)%words.length]
+            $(this).html(word).fadeIn();
+            //$(this).css('textColor', 'orange'); // or color of choice
+
+            if (word == 'Commercial') {
+             delay = 3;
+            } else {
+             delay = 2;
+            }
+        });
+       // 2 seconds
+    }, delay * 1000);
+
+}) ();
+    
+    
 
 
 //NAME HOVER IN PROJECT PEOPLE
