@@ -166,7 +166,7 @@ button:hover {
 
 #bannerCover {
     position: relative;
-    top: 30%;
+    top: 40%;
     max-width: 740px;
     margin-left: auto;
     margin-right: auto;
@@ -188,6 +188,38 @@ button:hover {
     font-weight: 700px;
     /*font-size: 1.15em;
     color: #37474F;*/
+}
+
+.iconContainer {
+    position: relative;
+    top: 30%;
+    max-width: 740px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.iconChange {
+    display: inline-block;
+    text-align: center;
+}
+
+.col {
+    width: 100px;
+}
+
+#iconChange1, #iconChange2, #iconChange3 {
+    top: 0px;
+}
+
+.iconChange {
+    position: relative;
+    display: inline-block;
+    height: 70px;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    color: #37474f;
 }
 
 
@@ -232,7 +264,7 @@ button:hover {
     text-align: left;
     background: white;
     
-    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.31);
+    box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
 .proj:after {
@@ -240,7 +272,7 @@ button:hover {
     clear: both;
 }
 .proj:hover {
-    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.35);
 }
 
 .desc {
@@ -531,7 +563,7 @@ button:hover {
     border-radius: 90px;
     margin-left: auto;
     margin-right: auto;
-    /*box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.31);*/
+    /*box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);*/
 }
 
 .peeps img:hover {

@@ -62,43 +62,104 @@ $(document).scroll(function() {
 
     
     
-(function() { //Code by Konstantin Nikkari + Zachary Green (https://teamtreehouse.com/community/topic-text-with-changing-word-jquery-or-css)
+    
+    // ICON CAROUSEL
+    
+    
+(function() { // Code by Konstantin Nikkari + Zachary Green (https://teamtreehouse.com/community/topic-text-with-changing-word-jquery-or-css)
 
     // List your words here:
-    var words = [
-        '<img src="img/Icons/Homepage/airplanes.png" width="100" height="100">',
-        '<img src="img/Icons/Homepage/car2.png" width="100" height="100">',
-        '<img src="img/Icons/Homepage/bike.png" width="100" height="100">',
-        '<img src="img/Icons/Homepage/commercial.png" width="100" height="100">',
-        '<img src="img/Icons/Homepage/ferry.png" width="100" height="100">',
-        '<img src="img/Icons/Homepage/food.png" width="100" height="100">',
-        '<img src="img/Icons/Homepage/gas.png" width="100" height="100">',
-        '<img src="img/Icons/Homepage/home.png" width="100" height="100">',
-        '<img src="img/Icons/Homepage/mobile.png" width="100" height="100">',
-        '<img src="img/Icons/Homepage/public_transport.png" width="100" height="100">',
-        '<img src="img/Icons/Homepage/tactile.png" width="100" height="100">',
-        '<img src="img/Icons/Homepage/walk.png" width="100" height="100">',
-        '<img src="img/Icons/Homepage/water.png" width="100" height="100">',
-        '<img src="img/Icons/Homepage/web.png" width="100" height="100">',
+    var words1 = [
+        'Consumer',
+        '<img src="img/Icons/Homepage/car2.png" width="50" height="50">',
+        '<img src="img/Icons/Homepage/commercial.png" width="50" height="50">',
+        '<img src="img/Icons/Homepage/home.png" width="50" height="50">'
         ], i = 0,
          delay = 2;
 
     setInterval(function() {
-        $('#iconChange').fadeOut( function() {
-            var word = words[i=(i+1)%words.length]
-            $(this).html(word).fadeIn();
+        $('#iconChange1').fadeOut( function() {
+            var word1 = words1[i=(i+1)%words1.length]
+            $(this).html(word1).fadeIn();
             //$(this).css('textColor', 'orange'); // or color of choice
 
-            if (word == 'Commercial') {
+            if (word1 == 'Consumer') {
              delay = 3;
             } else {
              delay = 2;
             }
         });
-       // 2 seconds
+        
+        
     }, delay * 1000);
 
 }) ();
+    
+    
+    
+    (function() { //Code by Konstantin Nikkari + Zachary Green (https://teamtreehouse.com/community/topic-text-with-changing-word-jquery-or-css)
+
+    // List your words here:
+    var words2 = [
+        'Energy',
+        '<img src="img/Icons/Homepage/water.png" width="50" height="50">',
+        '<img src="img/Icons/Homepage/food.png" width="50" height="50">',
+        '<img src="img/Icons/Homepage/gas.png" width="50" height="50">'
+        ], i = 0,
+         delay = 2;
+
+    setInterval(function() {
+        $('#iconChange2').fadeOut( function() {
+            var word2 = words2[i=(i+1)%words2.length]
+            $(this).html(word2).fadeIn();
+            //$(this).css('textColor', 'orange'); // or color of choice
+
+            if (word2 == 'Energy') {
+             delay = 5;
+            } else {
+             delay = 2;
+            }
+        });
+        
+        
+    }, delay * 1000);
+
+}) ();
+    
+    
+    
+    (function() { //Code by Konstantin Nikkari + Zachary Green (https://teamtreehouse.com/community/topic-text-with-changing-word-jquery-or-css)
+
+    // List your words here:
+    var words3 = [
+        'Interfaces',
+        '<img src="img/Icons/Homepage/mobile.png" width="50" height="50">',
+        '<img src="img/Icons/Homepage/tactile.png" width="50" height="50">',
+        '<img src="img/Icons/Homepage/web.png" width="50" height="50">'
+        ], i = 0,
+         delay = 2;
+
+    setInterval(function() {
+        $('#iconChange3').fadeOut( function() {
+            var word3 = words3[i=(i+1)%words3.length]
+            $(this).html(word3).fadeIn();
+            //$(this).css('textColor', 'orange'); // or color of choice
+
+            if (word3 == 'Interfaces') {
+             delay = 7;
+            } else {
+             delay = 2;
+            }
+        });
+        
+        
+    }, delay * 1000);
+
+}) ();
+    
+    
+    
+    
     
     
 
