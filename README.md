@@ -1,2 +1,4 @@
-# cEnergi
-Temporary home to the cEnergi website resources and code.
+cenergi.ucdavis.edu
+
+Maintainer: Bradley Singer <bwsinger@ucdavis.edu>
+
