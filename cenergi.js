@@ -336,8 +336,8 @@ $(document).scroll(function() {
         };
         
         //INTERFACES
-        if( $(this).hasClass('tan') ) {
-            $('.tangible').toggleClass('selected3');
+        if( $(this).hasClass('phy') ) {
+            $('.physical').toggleClass('selected3');
             $(this).toggleClass('selected');
         };
         if( $(this).hasClass('web') ) {

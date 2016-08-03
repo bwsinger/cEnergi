@@ -560,10 +560,41 @@ button:hover {
     position: relative;
     display: block;
     bottom: 0px;
+    border: 6px solid grey;
     border-radius: 90px;
     margin-left: auto;
     margin-right: auto;
     /*box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);*/
+}
+
+/* Social and Behavioral Sciences*/
+.peeps.SBS img{
+    border-color: red;
+}
+
+/* Transportation and Energy */
+.peeps.TE img{
+    border-color: blue;
+}
+
+/* Computer Science */
+.peeps.CS img{
+    border-color: purple;
+}
+
+/* Design */
+.peeps.D img{
+    border-color: yellow;
+}
+
+/* Mechanical Engineering */
+.peeps.ME img{
+    border-color: pink;
+}
+
+/* Human Ecology */
+.peeps.HE img{
+    border-color: green;
 }
 
 .peeps img:hover {
