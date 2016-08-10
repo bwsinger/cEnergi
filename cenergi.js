@@ -198,14 +198,12 @@ $(document).scroll(function() {
             }
 
         }).mousemove(function (e) {
-            var mousex = e.pageX - 45; //Get X coordinates
-            var mousey = e.pageY - 280; //Get Y coordinates
+            var mousex = e.pageX; //- 500;//45; //Get X coordinates
+            var mousey = e.pageY; //- 400;//280; //Get Y coordinates
             $('.tooltip').css( {
                 top: mousey,
                 left: mousex
             });
-
-
 
             return false;
         });
