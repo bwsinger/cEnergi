@@ -30,10 +30,13 @@ $(document).ready(function () {
     
     var hems = "<h3>Research Summary</h3><br>           cEnergi is working with SEE Change Institute on newly executed contract with PG&E to help define their role in home energy management (HEM) technology. cEnergi post-doc Angela Sanguinetti is leading the customer research stream, which includes an online survey of PG&E customers to assess general awareness and knowledge of HEM products and smart home technology more broadly, as well as attitudes toward these technologies, including perceived benefits, barriers, and preferred product features and functionality. We are also partnering with Sears and Target to conduct research at Sear Connected Solutions smart home installation in their San Bruno, CA, store and Target Open House, a cutting-edge smart home technology demonstration store in San Francisco. ";
     
+    var hwr = "<h3>Research Summary</h3><br>         In partnership with the Center for Water and Energy Efficiency and WaterSmart, we are exploring how home water reports can inspire not only water-saving behavior, but perhaps also energy-saving behavior. This spillover effect was observed in a large-scale pilot in Burbank, California, and we're looking to replicate and explain the finding in a new pilot in Riverside, California. This project is funded by the California Department of Water Resources.";
     
+    var wved = "<h3>Project Summary</h3><br>        As a follow-up to our flag feedback study, we are expanding the West VIllage Energy Feedback project by developing a system of energy dashboards targeting all the energy and transportation research centers in West Village, including a community-level dashboard and four building-level dashboards. They will be stationed in communal, high-traffic areas on large touch-screen monitors. Feedback elements on the dashboard include consumption data disaggregated by end uses, as well as social, historical, and goal-based referents.";
     
+    var dbtef = "<h3>Research Summary</h3><br>      Research in the field of environmental psychology has demonstrated that connection to nature promotes pro-environmental behavior. Nature can be defined broadly or understood as the natural resources and processes that sustain a community. Connection to nature can be affective—a felt sense of relatedness/identification with nature, and cognitive—awareness/understanding of the interdependencies between self, community, and nature. At cEnergi, we are developing a transdisciplinary theory to explain how eco-feedback can promote these types of connection to nature. We aim to articulate the key design characteristics of eco-feedback that promote each type of connection and the behavioral functions and mechanisms via which they achieve these effects.";
     
-    
+    var maedfs = "<h3>Research Summary</h3><br>     We are currently conducting a meta-analysis to identify the key mediating and moderating variables in eco-driving feedback studies that explain the wide range of effects (from negative fuel savings to over 20%). For example, the few studies that have compared multiple types of feedback suggest it is more effective when it aligns with drivers’ values and goals (e.g., saving money versus reducing emissions) and when it is adaptive (consisting of graduated challenges), but these are each solitary findings. Our meta-analysis will identify similar variables emergent from the entire population of eco-driving feedback studies.";
 
 
 //CHANGE LOGO ON HOVER
@@ -157,11 +160,6 @@ $(document).scroll(function() {
 
 }) ();
     
-    
-    
-    
-    
-    
 
 
 //NAME HOVER IN PROJECT PEOPLE
@@ -198,8 +196,8 @@ $(document).scroll(function() {
             }
 
         }).mousemove(function (e) {
-            var mousex = e.pageX; //- 500;//45; //Get X coordinates
-            var mousey = e.pageY; //- 400;//280; //Get Y coordinates
+            var mousex = e.pageX - 45; //Get X coordinates
+            var mousey = e.pageY - 280; //Get Y coordinates
             $('.tooltip').css( {
                 top: mousey,
                 left: mousex
@@ -269,10 +267,18 @@ $(document).scroll(function() {
         else if ( $(this).hasClass('hems') ) {
             $('.box p').html(hems);
         }
-        
-        
-        
-        
+        else if ( $(this).hasClass('hwr') ) {
+            $('.box p').html(hwr);
+        }
+        else if ( $(this).hasClass('wved') ) {
+            $('.box p').html(wved);
+        }
+        else if ( $(this).hasClass('dbtef') ) {
+            $('.box p').html(dbtef);
+        }
+        else if ( $(this).hasClass('maedfs') ) {
+            $('.box p').html(maedfs);
+        }
         
     });
 
@@ -321,29 +327,29 @@ $(document).scroll(function() {
         
         //ENERGY
         if( $(this).hasClass('fue') ) {
-            $('.fuel').toggleClass('selected2');
+            $('.fuel').toggleClass('selected');
             $(this).toggleClass('selected');
         };
         if( $(this).hasClass('wat') ) {
-            $('.water').toggleClass('selected2');
+            $('.water').toggleClass('selected');
             $(this).toggleClass('selected');
         };
         if( $(this).hasClass('foo') ) {
-            $('.food').toggleClass('selected2');
+            $('.food').toggleClass('selected');
             $(this).toggleClass('selected');
         };
         
         //INTERFACES
         if( $(this).hasClass('phy') ) {
-            $('.physical').toggleClass('selected3');
+            $('.physical').toggleClass('selected');
             $(this).toggleClass('selected');
         };
         if( $(this).hasClass('web') ) {
-            $('.website').toggleClass('selected3');
+            $('.website').toggleClass('selected');
             $(this).toggleClass('selected');
         };
         if( $(this).hasClass('mob') ) {
-            $('.mobile').toggleClass('selected3');
+            $('.mobile').toggleClass('selected');
             $(this).toggleClass('selected');
         };
         
@@ -351,9 +357,4 @@ $(document).scroll(function() {
         //Reordering
         
     });
-    
-    
-
-
-
 });
