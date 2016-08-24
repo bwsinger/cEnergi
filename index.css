@@ -341,8 +341,7 @@ button:hover {
 }
 
 
-
-
+/* Reference: http://www.jquery-az.com/boots/demo.php?ex=11.0_4 */
 .tooltip {
 	position:absolute;
 	border:1px solid #333;
@@ -353,6 +352,26 @@ button:hover {
 	font-size:.75em;
     z-index: 1000;
 }
+
+.tooltip-inner{
+    /*max-width:310px;*/
+    /*padding:3px 8px;*/
+    position: relative;
+    top:-6px;
+    color:#fff;
+    text-align:center;
+/*    background-color:#245973;*/
+    border-radius:5px
+}
+
+/*.tooltip-arrow{
+    bottom:0;
+    left:50%;
+    margin-left:-5px;
+    border-left:3px solid transparent;
+    border-right:3px solid transparent;
+    border-top:3px solid #000
+}*/
 
 /* LIGHTBOXES -------------------*/
 

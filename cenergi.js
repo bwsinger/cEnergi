@@ -133,78 +133,86 @@ $(document).scroll(function() {
     
     (function() { //Code by Konstantin Nikkari + Zachary Green (https://teamtreehouse.com/community/topic-text-with-changing-word-jquery-or-css)
 
-    // List your words here:
-    var words3 = [
-        'Interfaces',
-        '<img src="img/Icons/Homepage/mobile.png" width="50" height="50">',
-        '<img src="img/Icons/Homepage/tactile.png" width="50" height="50">',
-        '<img src="img/Icons/Homepage/web.png" width="50" height="50">'
-        ], i = 0,
-         delay = 2;
-
-    setInterval(function() {
-        $('#iconChange3').fadeOut( function() {
-            var word3 = words3[i=(i+1)%words3.length]
-            $(this).html(word3).fadeIn();
-            //$(this).css('textColor', 'orange'); // or color of choice
-
-            if (word3 == 'Interfaces') {
-             delay = 7;
-            } else {
+        // List your words here:
+        var words3 = [
+            'Interfaces',
+            '<img src="img/Icons/Homepage/mobile.png" width="50" height="50">',
+            '<img src="img/Icons/Homepage/tactile.png" width="50" height="50">',
+            '<img src="img/Icons/Homepage/web.png" width="50" height="50">'
+            ], i = 0,
              delay = 2;
-            }
-        });
-        
-        
-    }, delay * 1000);
 
-}) ();
+        setInterval(function() {
+            $('#iconChange3').fadeOut( function() {
+                var word3 = words3[i=(i+1)%words3.length]
+                $(this).html(word3).fadeIn();
+                //$(this).css('textColor', 'orange'); // or color of choice
+
+                if (word3 == 'Interfaces') {
+                 delay = 7;
+                } else {
+                 delay = 2;
+                }
+            });
+            
+            
+        }, delay * 1000);
+
+    }) ();
     
 
+    // New tooltip code - requires denoting tooltip for each image
+    // $('[data-toggle="tooltip"]').tooltip();
 
-//NAME HOVER IN PROJECT PEOPLE
-    $('#projects p img').hover(function () {
-        console.log("project bio hover");
+    $("img").tooltip({
+        placement: "bottom"
+    });
 
-        var src = $(this).attr('src');
-        // "img/Students/Justin-Woodjack.jpg"
-        var tarr = src.split('/');
-        // ["img","Students","Justin-Woodjack.jpg"]
-        var file = tarr[tarr.length - 1];
-        // "Justin-Woodjack.jpg"
-        var data = file.split('.')[0];
-        // "Justin-Woodjack"
-        var names = data.split('-').join(' ');
 
-        console.log(names);
 
-        var lbl = document.createElement('span');
-        lbl.className = 'tooltip'; //.overlay pos abs
-        lbl.style.left = this.offsetLeft;
-        lbl.textContent = names;
-        this.parentNode.appendChild(lbl);
+// //NAME HOVER IN PROJECT PEOPLE
+//     $('#projects p img').hover(function () {
+//         console.log("project bio hover");
 
-        //$('#label').text(names);
-        //$('#label').css('visibility', 'visible');
+//         var src = $(this).attr('src');
+//         // "img/Students/Justin-Woodjack.jpg"
+//         var tarr = src.split('/');
+//         // ["img","Students","Justin-Woodjack.jpg"]
+//         var file = tarr[tarr.length - 1];
+//         // "Justin-Woodjack.jpg"
+//         var data = file.split('.')[0];
+//         // "Justin-Woodjack"
+//         var names = data.split('-').join(' ');
 
-    }, function () {
-        //$('#label').css('visibility', 'hidden');
-        var removethese = this.parentNode.getElementsByClassName('tooltip');
+//         console.log(names);
 
-        for (var i = 0; i < removethese.length; i++) {
-            this.parentNode.removeChild(removethese[i])
-            }
+//         var lbl = document.createElement('span');
+//         lbl.className = 'tooltip'; //.overlay pos abs
+//         lbl.style.left = this.offsetLeft;
+//         lbl.textContent = names;
+//         this.parentNode.appendChild(lbl);
 
-        }).mousemove(function (e) {
-            var mousex = e.pageX - 45; //Get X coordinates
-            var mousey = e.pageY - 280; //Get Y coordinates
-            $('.tooltip').css( {
-                top: mousey,
-                left: mousex
-            });
+//         //$('#label').text(names);
+//         //$('#label').css('visibility', 'visible');
 
-            return false;
-        });
+//     }, function () {
+//         //$('#label').css('visibility', 'hidden');
+//         var removethese = this.parentNode.getElementsByClassName('tooltip');
+
+//         for (var i = 0; i < removethese.length; i++) {
+//             this.parentNode.removeChild(removethese[i])
+//             }
+
+//         }).mousemove(function (e) {
+//             var mousex = e.pageX - 45; //Get X coordinates
+//             var mousey = e.pageY - 280; //Get Y coordinates
+//             $('.tooltip').css( {
+//                 top: mousey,
+//                 left: mousex
+//             });
+
+//             return false;
+//         });
 
 
     
