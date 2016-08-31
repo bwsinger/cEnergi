@@ -436,7 +436,7 @@ button:hover {
     float: right;
     right: 0;
     top: 0;
-    width: 220px;
+    width: 240px;
     height: 100%;
     background-color: white;
     padding: 20px;
@@ -461,6 +461,19 @@ button:hover {
     text-align: left;
     /*color: #E48125;*/
 }
+
+.sidebar a {
+    font-size: 1.5em;
+}
+.sidebar p {
+    font-size: 1.5em;
+}
+
+.sidebar p {
+    display: inline;
+}
+
+
 
 #consumer {
     padding-top: 0px;
@@ -489,6 +502,9 @@ button:hover {
     color: #DDD;
 }
 
+.sidebar li.nohover:hover {
+    color: #37474F;
+}
 
 .selected {
     background: #E48125;
