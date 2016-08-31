@@ -303,7 +303,11 @@ button:hover {
 #projects p img {
     border-radius: 40px;
     margin-right: 10px;
-    margin-bottom: 5px; 
+    margin-bottom: 5px;
+}
+
+#projects p img.tag_img {
+    border-radius: inherit;
 }
 
 .proj p {
@@ -446,7 +450,7 @@ button:hover {
 }
 
 .sidebar img {
-    padding-bottom: 10px;
+    /*padding-bottom: 10px;*/
 }
 
 .sidebar #filtertitle {
