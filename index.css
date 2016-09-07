@@ -304,10 +304,12 @@ button:hover {
     border-radius: 40px;
     margin-right: 10px;
     margin-bottom: 5px;
+    z-index: 90;
 }
 
 #projects p img.tag_img {
     border-radius: inherit;
+    z-index: 90;
 }
 
 .proj p {
@@ -366,6 +368,7 @@ button:hover {
     text-align:center;
 /*    background-color:#245973;*/
     border-radius:5px
+    z-index: 1001;
 }
 
 /*.tooltip-arrow{
@@ -420,6 +423,22 @@ button:hover {
     -moz-hyphens: auto;
     -ms-hyphens: auto;
 }
+
+/* formatting for the citations */
+
+.box p > ul {
+    list-style-type: none;
+}
+
+.box p > ul > li {
+    font-size: 12px;
+    line-height: 150%;
+    /* formatting the hangingindent for multiple citations */
+    margin-left: 18px;
+    text-indent: -18px;
+}
+
+
  
 .close { /*code by Tony Lea*/
     position: absolute;
