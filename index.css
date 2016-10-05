@@ -695,7 +695,7 @@ button:hover {
     color: #37474F;
 }
 
-#about div {
+#about div.vision_goals_vid {
     padding-bottom: 30px;
 }
 #about article:nth-child(even) {
@@ -724,17 +724,20 @@ button:hover {
 }
 
 #partners .collab {
-    background: white;
+    background: #F9F9F9;
     min-height: 100px;
+    /* Allows the images to be centered in their parent div */
+    line-height: 100px;
 }
 
 #partners img {
-    display: block;
+    /*display: block;*/
     max-height: 100px;
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
-    background: white;
+    vertical-align: middle;
+    background: #F9F9F9;  /* Should this be removed for transparent backgrounds? */
 }
 
 #about a {
@@ -742,13 +745,15 @@ button:hover {
 }
 
 #partners {
-    height: 500px;
+    height: 800px; 
 }
 
 #partners .half {
     min-height: 130px;
-    width: 45%;
+    width: 32%;     /*Determines how many img per column*/
     margin: 5px;
+    white-space: nowrap;
+    text-align: center; /*margin: 1em 0;*/
     -webkit-box-sizing: border-box; /* Safari/Chrome, other */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
     box-sizing: border-box;         /* Opera/IE 8+ */
@@ -811,6 +816,13 @@ footer {
 
 .container {
     width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aboutcontainer {
+    width: 1000px;
+    /*display: block;*/
     margin-left: auto;
     margin-right: auto;
 }
