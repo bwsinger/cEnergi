@@ -350,6 +350,7 @@ button:hover {
 /* Reference: http://www.jquery-az.com/boots/demo.php?ex=11.0_4 */
 .tooltip {
 	position:absolute;
+    max-height: 1em;
 	border:1px solid #333;
     background-color:rgba(22, 22, 22, 0.8);
 	border-radius:5px;
