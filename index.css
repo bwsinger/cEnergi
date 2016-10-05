@@ -464,7 +464,7 @@ button:hover {
     height: 100%;
     background-color: white;
     padding: 20px;
-    margin-top: 75px;
+    margin-top: 60px;
     line-height: 1.5em;
     text-align: center;
 }
@@ -476,11 +476,11 @@ button:hover {
 .sidebar #filtertitle {
     color: #37474F;
     font-size: 1em;
-    padding-bottom: 20px;
+    /*padding-bottom: 20px;*/
 }
 
 .sidebar h2 {
-    padding-top: 15px;
+    padding-top: 10px;
     padding-bottom: 5px;
     text-align: left;
     /*color: #E48125;*/
