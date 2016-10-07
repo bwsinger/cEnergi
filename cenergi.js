@@ -171,15 +171,23 @@ $(document).ready(function () {
 //
 //  FIX: NAVBAR BACKGROUND SOMETIMES DISAPEARS
 //
-var a = $("nav").offset().top;
+//  NOTE: When you reload the page, the navbar considers where ever it is to be the
+//  "top" of the page. This causes the navbar to have no background at any point
+//  higher than that point on the page.
+//
+//  NOTE: If this code is reimplemented, make sure to comment out the background-color
+//  attribute under "nav" in the CSS file.
+//
 
-$(document).scroll(function() {
-    if ($(this).scrollTop() > a) {   
-       $('nav').css("background", "rgba(221,221,221,0.92)");
-    } else {
-       $('nav').css("background", "transparent");
-    }
-});
+// var a = $("nav").offset().top;
+
+// $(document).scroll(function() {
+//     if ($(this).scrollTop() > a) {   
+//        $('nav').css("background", "rgba(221,221,221,0.92)");
+//     } else {
+//        $('nav').css("background", "transparent");
+//     }
+// });
 
 
     
