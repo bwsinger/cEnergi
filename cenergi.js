@@ -40,7 +40,7 @@ $(document).ready(function () {
 
     var solarde = "<h3>Project Summary</h3><br>     We're supporting the UC Davis 2017 Solar Decathlon team by designing interfaces for connecting residents to water consumption. The current theme of this bi-enniel competition is water efficiency, a crucial and timely topic for Californians. Stay tuned for ground-breaking innovations in consumer-water interfaces!      <br><br><a target='_blank' href='http://solardecathlon.ucdavis.edu/'><button>Explore the Site</button></a>";
 
-//CHANGE LOGO ON HOVER
+    //CHANGE LOGO ON HOVER
     $('#logo').hover(function () {
         console.log("logo hover");
         $('#logo img').attr("src", "img/Logos/logoBanner2.png");
@@ -50,9 +50,127 @@ $(document).ready(function () {
         return false;
     });
 
+    // Change about page logos on hover
+    $('#phev').hover(function () {
+        console.log("phev hover");
+        $('#phev img').attr("src", "img/Logos/phev_2.png");
+    }, function () {
+        $('#phev img').attr("src", "img/Logos/phev_1.png");
+        return false;
+    });
+
+    $('#eco').hover(function () {
+        console.log("eco hover");
+        $('#eco img').attr("src", "img/Logos/eco_2.png");
+    }, function () {
+        $('#eco img').attr("src", "img/Logos/eco_1.png");
+        return false;
+    });
+
+    $('#cadwr').hover(function () {
+        console.log("cadwr hover");
+        $('#cadwr img').attr("src", "img/Logos/cadwr_4.png");
+    }, function () {
+        $('#cadwr img').attr("src", "img/Logos/cadwr_1.png");
+        return false;
+    });
+
+    $('#cwee').hover(function () {
+        console.log("cwee hover");
+        $('#cwee img').attr("src", "img/Logos/cwee_2.png");
+    }, function () {
+        $('#cwee img').attr("src", "img/Logos/cwee_1.png");
+        return false;
+    });
+
+    $('#doe').hover(function () {
+        console.log("doe hover");
+        $('#doe img').attr("src", "img/Logos/doe_2.png");
+    }, function () {
+        $('#doe img').attr("src", "img/Logos/doe_1.png");
+        return false;
+    });
+
+    $('#eec').hover(function () {
+        console.log("eec hover");
+        $('#eec img').attr("src", "img/Logos/eec_2.png");
+    }, function () {
+        $('#eec img').attr("src", "img/Logos/eec_1.png");
+        return false;
+    });
+
+    $('#epri').hover(function () {
+        console.log("epri hover");
+        $('#epri img').attr("src", "img/Logos/epri_2.png");
+    }, function () {
+        $('#epri img').attr("src", "img/Logos/epri_1.png");
+        return false;
+    });
+
+    $('#mrpi').hover(function () {
+        console.log("mrpi hover");
+        $('#mrpi img').attr("src", "img/Logos/mrpi_2.png");
+    }, function () {
+        $('#mrpi img').attr("src", "img/Logos/mrpi_1.png");
+        return false;
+    });
+
+    $('#ncst').hover(function () {
+        console.log("ncst hover");
+        $('#ncst img').attr("src", "img/Logos/ncst_2.png");
+    }, function () {
+        $('#ncst img').attr("src", "img/Logos/ncst_1.png");
+        return false;
+    });
+
+    $('#sc').hover(function () {
+        console.log("sc hover");
+        $('#sc img').attr("src", "img/Logos/seeChange_2.png");
+    }, function () {
+        $('#sc img').attr("src", "img/Logos/seeChange_1.png");
+        return false;
+    });
+
+    $('#or').hover(function () {
+        console.log("or hover");
+        $('#or img').attr("src", "img/Logos/officeResearch_2.png");
+    }, function () {
+        $('#or img').attr("src", "img/Logos/officeResearch_1.png");
+        return false;
+    });
+
+    $('#pge').hover(function () {
+        console.log("pge hover");
+        $('#pge img').attr("src", "img/Logos/pge_2.png");
+    }, function () {
+        $('#pge img').attr("src", "img/Logos/pge_1.png");
+        return false;
+    });
+
+    $('#ws').hover(function () {
+        console.log("ws hover");
+        $('#ws img').attr("src", "img/Logos/waterSmart_2.png");
+    }, function () {
+        $('#ws img').attr("src", "img/Logos/waterSmart_1.png");
+        return false;
+    });
+
+    $('#wecc').hover(function () {
+        console.log("wecc hover");
+        $('#wecc img').attr("src", "img/Logos/wecc_2.png");
+    }, function () {
+        $('#wecc img').attr("src", "img/Logos/wecc_1.png");
+        return false;
+    });
+
+
+
 
     
 //NAVBAR BACKGROUND SCROLL TRANSPARENCY
+//
+//  FIX: NAVBAR BACKGROUND SOMETIMES DISAPEARS
+//
 var a = $("nav").offset().top;
 
 $(document).scroll(function() {
