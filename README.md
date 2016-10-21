@@ -1,4 +1,4 @@
 cenergi.ucdavis.edu
 
-Maintainer: Timothy Stapleton <tkstapleton@ucdavis.edu>
+Maintainer: Bradley Singer <bwsinger@ucdavis.edu>
 
