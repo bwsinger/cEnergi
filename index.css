@@ -250,6 +250,7 @@ button:hover {
     color: #37474F;
     display: block;
     text-align: center;
+    margin-bottom: -40px; /*Must be footer height*/
 }
 
 #projects .row {
@@ -583,6 +584,7 @@ button:hover {
     z-index: -10;
     padding-top: 75px;
     color: #37474F;
+    margin-bottom: -40px; /*Must be footer height*/
 }
 .people:nth-child(even) {
     background-color: white;
@@ -706,6 +708,7 @@ button:hover {
     z-index: -10;
     padding-top: 75px;
     color: #37474F;
+    margin-bottom: -40px; /*Must be footer height*/
 }
 
 #about div.vision_goals_vid {
@@ -793,9 +796,9 @@ button:hover {
 
 /* FOOTER ==============================================*/
 
-footer {
+.footer {
     clear: both;
-    position: absolute;
+    position: relative;
     /*display: block;*/
     color: #37474F;
     /*background-color: rgba(0, 0, 0, 0.5);*/
