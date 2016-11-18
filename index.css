@@ -16,8 +16,13 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+    min-height: 100%;
+}
       
 body {
+    height: 100%;
     min-height: 100%;
     position: relative;
     font-family: 'Roboto', sans-serif;
@@ -226,9 +231,12 @@ button:hover {
 /* PROJECTS ----------------------------------------------*/
 
 
+
+
 #projects {
     padding-bottom: 110px;
-    height: auto; /*100vh;*/
+    height: auto !important; /*100vh;*/
+    height: 100%;
     background: url(img/Backgrounds/ProjectsBackground2.jpg);
     background-color: #ECEFF1;
     background-repeat: no-repeat;
@@ -240,6 +248,8 @@ button:hover {
     z-index: -10;
     padding-top: 75px;
     color: #37474F;
+    display: block;
+    text-align: center;
 }
 
 #projects .row {
@@ -450,6 +460,7 @@ button:hover {
 
 .main {
     width: auto;
+    margin-left: 70px;
     margin-right: 220px;
 }
 
@@ -533,6 +544,7 @@ button:hover {
 .selected {
     background: #E48125;
     color: white;
+    /*display: none;*/
 }
 .selected h2, .selected h3, .selected li, .selected p, .selected span {
     color: white;
@@ -784,7 +796,7 @@ button:hover {
 footer {
     clear: both;
     position: absolute;
-    display: block;
+    /*display: block;*/
     color: #37474F;
     /*background-color: rgba(0, 0, 0, 0.5);*/
     /*background: linear-gradient(0deg, black, rgba(0, 0, 0, 0));*/

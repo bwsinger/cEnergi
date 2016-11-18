@@ -443,56 +443,155 @@ $(document).ready(function () {
 
     
     
-    
+var numSelected = 0;
+
 //Tag Filter for Projects
     //$('.transportation', '.commercial', '.residential') = false;
     
     $('.sidebar li').click(function() {
+
         //CONSUMER
         if( $(this).hasClass('tra') ) {
+            // Toggles the projects as 'selected'
             $('.transportation').toggleClass('selected');
+            // Toggles the sidebar icons as 'selected'
             $(this).toggleClass('selected');
             //$('.transportation').insertBefore( $('.proj').first() );
+            if( $(this).hasClass('selected') ) {
+                numSelected++;
+            } else {
+                numSelected--;
+            }
+
+            filterByTag(numSelected)
         };
         if( $(this).hasClass('res') ) {
             $('.residential').toggleClass('selected');
             $(this).toggleClass('selected');
+            if( $(this).hasClass('selected') ) {
+                numSelected++;
+            } else {
+                numSelected--;
+            }
+
+            filterByTag(numSelected)
         };
         if( $(this).hasClass('com') ) {
             $('.commercial').toggleClass('selected');
             $(this).toggleClass('selected');
+            if( $(this).hasClass('selected') ) {
+                numSelected++;
+            } else {
+                numSelected--;
+            }
+
+            filterByTag(numSelected)
         };
         
         //ENERGY
         if( $(this).hasClass('fue') ) {
             $('.fuel').toggleClass('selected');
             $(this).toggleClass('selected');
+            if( $(this).hasClass('selected') ) {
+                numSelected++;
+            } else {
+                numSelected--;
+            }
+
+            filterByTag(numSelected)
         };
         if( $(this).hasClass('wat') ) {
             $('.water').toggleClass('selected');
             $(this).toggleClass('selected');
+            if( $(this).hasClass('selected') ) {
+                numSelected++;
+            } else {
+                numSelected--;
+            }
+
+            filterByTag(numSelected)
         };
         if( $(this).hasClass('foo') ) {
             $('.food').toggleClass('selected');
             $(this).toggleClass('selected');
+            if( $(this).hasClass('selected') ) {
+                numSelected++;
+            } else {
+                numSelected--;
+            }
+
+            filterByTag(numSelected)
         };
         
         //INTERFACES
         if( $(this).hasClass('phy') ) {
             $('.physical').toggleClass('selected');
             $(this).toggleClass('selected');
+            if( $(this).hasClass('selected') ) {
+                numSelected++;
+            } else {
+                numSelected--;
+            }
+
+            filterByTag(numSelected)
         };
         if( $(this).hasClass('web') ) {
             $('.website').toggleClass('selected');
             $(this).toggleClass('selected');
+            if( $(this).hasClass('selected') ) {
+                numSelected++;
+            } else {
+                numSelected--;
+            }
+
+            filterByTag(numSelected)
         };
         if( $(this).hasClass('mob') ) {
             $('.mobile').toggleClass('selected');
             $(this).toggleClass('selected');
+            if( $(this).hasClass('selected') ) {
+                numSelected++;
+            } else {
+                numSelected--;
+            }
+
+            filterByTag(numSelected)
         };
         
         
         //Reordering
         
     });
+
+
+
+    // Hide and show the projects based on tags selected
+    // Reference: http://www.w3schools.com/howto/howto_js_filter_table.asp
+
+    function filterByTag(numS) {
+        var allProjects = document.getElementsByClassName("proj");
+
+        for(var i = 0; i < allProjects.length; i++) {
+            // Test stuff
+            console.log(allProjects)
+            console.log(allProjects[0])
+            console.log($(allProjects).eq(i)["0"])
+
+            if(numS == 0) {
+                allProjects[i].style.display = "";
+            } else {
+                if( $(allProjects).eq(i).hasClass("selected") ) {
+                    allProjects[i].style.display = "";
+                } else {
+                    allProjects[i].style.display = "none";
+                }
+            }
+        } // end for
+    } // end filterByTag()
+
+
+
+
+
+
 });
