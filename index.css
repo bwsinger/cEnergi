@@ -395,7 +395,7 @@ button:hover {
 /* LIGHTBOXES -------------------*/
 
 .backdrop { /*code by Tony Lea http://www.tonylea.com/2011/how-to-create-your-own-jquery-lightbox/*/
-    position:absolute;
+    position:fixed;
     top:0px;
 	left:0px;
     width:100%;
