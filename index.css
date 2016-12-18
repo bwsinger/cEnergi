@@ -314,7 +314,7 @@ button:hover {
 #projects p img {
     border-radius: 40px;
     margin-right: 10px;
-    margin-bottom: 5px;
+    /*margin-bottom: 5px;*/
     z-index: 90;
 }
 
@@ -335,8 +335,17 @@ button:hover {
 }
 .bottom {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
+    bottom: 2%;
+    left: 4%;
+}
+
+.bottom_right {
+    position: absolute;
+    bottom: 2%;
+    right: 4%;
+    font-size: 1.5em;
+    color: #E48125;
+    z-index: 91;
 }
 
 .eco {
@@ -449,8 +458,6 @@ button:hover {
     margin-left: 18px;
     text-indent: -18px;
 }
-
-
  
 .close { /*code by Tony Lea*/
     position: absolute;
