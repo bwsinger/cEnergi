@@ -319,7 +319,7 @@ button:hover {
     z-index: 90;
 }
 
-#projects p img.tag_img {
+#projects p img.tag-img {
     border-radius: inherit;
     z-index: 90;
 }

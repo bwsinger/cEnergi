@@ -468,6 +468,22 @@ $(document).ready(function () {
     
     
 var numSelected = 0;
+var anySelected = false;
+
+// Get all tag icon source paths
+var imgSrc = $('.tag-img').map(function(){ return this.src });
+// Get number of tag icons
+var numTag = imgSrc.length;
+// Get all tag icon "clicked" source paths
+var imgSrcClick = imgSrc.map(function(){ 
+    var str = this.slice(0, -4);
+    str = str + "_clicked.svg";
+    return str;
+});
+
+console.log(numTag);
+console.log(imgSrc);
+console.log(imgSrcClick);
 
 //Tag Filter for Projects
     //$('.transportation', '.commercial', '.residential') = false;
@@ -481,10 +497,15 @@ var numSelected = 0;
             // Toggles the sidebar icons as 'selected'
             $(this).toggleClass('selected');
             //$('.transportation').insertBefore( $('.proj').first() );
+
             if( $(this).hasClass('selected') ) {
                 numSelected++;
+                // Change icon to distinguish against orange background
+                $('.tra img').attr("src", "img/Projects/tag_icons/transport_clicked.svg");
             } else {
                 numSelected--;
+                // Change icon back
+                $('.tra img').attr("src", "img/Projects/tag_icons/transport.svg");
             }
 
             filterByTag(numSelected)
@@ -494,8 +515,10 @@ var numSelected = 0;
             $(this).toggleClass('selected');
             if( $(this).hasClass('selected') ) {
                 numSelected++;
+                $('.res img').attr("src", "img/Projects/tag_icons/residential_cilcked.svg");
             } else {
                 numSelected--;
+                $('.res img').attr("src", "img/Projects/tag_icons/residential.svg");
             }
 
             filterByTag(numSelected)
@@ -505,8 +528,10 @@ var numSelected = 0;
             $(this).toggleClass('selected');
             if( $(this).hasClass('selected') ) {
                 numSelected++;
+                $('.com img').attr("src", "img/Projects/tag_icons/commercial_clicked.svg");
             } else {
                 numSelected--;
+                $('.com img').attr("src", "img/Projects/tag_icons/commercial.svg");
             }
 
             filterByTag(numSelected)
@@ -518,8 +543,10 @@ var numSelected = 0;
             $(this).toggleClass('selected');
             if( $(this).hasClass('selected') ) {
                 numSelected++;
+                $('.fue img').attr("src", "img/Projects/tag_icons/fuel_clicked.svg");
             } else {
                 numSelected--;
+                $('.fue img').attr("src", "img/Projects/tag_icons/fuel.svg");
             }
 
             filterByTag(numSelected)
@@ -529,8 +556,10 @@ var numSelected = 0;
             $(this).toggleClass('selected');
             if( $(this).hasClass('selected') ) {
                 numSelected++;
+                $('.wat img').attr("src", "img/Projects/tag_icons/water_clicked.svg");
             } else {
                 numSelected--;
+                $('.wat img').attr("src", "img/Projects/tag_icons/water.svg");
             }
 
             filterByTag(numSelected)
@@ -540,8 +569,10 @@ var numSelected = 0;
             $(this).toggleClass('selected');
             if( $(this).hasClass('selected') ) {
                 numSelected++;
+                $('.foo img').attr("src", "img/Projects/tag_icons/food_clicked.svg");
             } else {
                 numSelected--;
+                $('.foo img').attr("src", "img/Projects/tag_icons/food.svg");
             }
 
             filterByTag(numSelected)
@@ -553,8 +584,10 @@ var numSelected = 0;
             $(this).toggleClass('selected');
             if( $(this).hasClass('selected') ) {
                 numSelected++;
+                $('.phy img').attr("src", "img/Projects/tag_icons/physical_clicked.svg");
             } else {
                 numSelected--;
+                $('.phy img').attr("src", "img/Projects/tag_icons/physical.svg");
             }
 
             filterByTag(numSelected)
@@ -564,8 +597,10 @@ var numSelected = 0;
             $(this).toggleClass('selected');
             if( $(this).hasClass('selected') ) {
                 numSelected++;
+                $('.web img').attr("src", "img/Projects/tag_icons/web_clicked.svg");
             } else {
                 numSelected--;
+                $('.web img').attr("src", "img/Projects/tag_icons/web.svg");
             }
 
             filterByTag(numSelected)
@@ -575,16 +610,14 @@ var numSelected = 0;
             $(this).toggleClass('selected');
             if( $(this).hasClass('selected') ) {
                 numSelected++;
+                $('.mob img').attr("src", "img/Projects/tag_icons/mobile_clicked.svg");
             } else {
                 numSelected--;
+                $('.mob img').attr("src", "img/Projects/tag_icons/mobile.svg");
             }
 
             filterByTag(numSelected)
         };
-        
-        
-        //Reordering
-        
     });
 
 
@@ -594,14 +627,23 @@ var numSelected = 0;
 
     function filterByTag(numS) {
         var allProjects = document.getElementsByClassName("proj");
+        var allTags = document.getElementsByClassName("tag-img");
+
+        for(var i = 0; i < numTag; i++) {
+            if(numS === 0) {
+                allTags[i].src = imgSrc[i];
+            } else {
+                allTags[i].src = imgSrcClick[i];
+            }
+        }
 
         for(var i = 0; i < allProjects.length; i++) {
             // Test stuff
-            console.log(allProjects)
-            console.log(allProjects[0])
-            console.log($(allProjects).eq(i)["0"])
+            // console.log(allProjects)
+            // console.log(allProjects[0])
+            // console.log($(allProjects).eq(i)["0"])
 
-            if(numS == 0) {
+            if(numS === 0) {
                 allProjects[i].style.display = "";
             } else {
                 if( $(allProjects).eq(i).hasClass("selected") ) {
@@ -612,10 +654,5 @@ var numSelected = 0;
             }
         } // end for
     } // end filterByTag()
-
-
-
-
-
 
 });
