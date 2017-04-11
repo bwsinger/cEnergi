@@ -515,7 +515,7 @@ console.log(imgSrcClick);
             $(this).toggleClass('selected');
             if( $(this).hasClass('selected') ) {
                 numSelected++;
-                $('.res img').attr("src", "img/Projects/tag_icons/residential_cilcked.svg");
+                $('.res img').attr("src", "img/Projects/tag_icons/residential_clicked.svg");
             } else {
                 numSelected--;
                 $('.res img').attr("src", "img/Projects/tag_icons/residential.svg");

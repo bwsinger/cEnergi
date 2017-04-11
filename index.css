@@ -489,10 +489,6 @@ button:hover {
     text-align: center;
 }
 
-.sidebar img {
-    /*padding-bottom: 10px;*/
-}
-
 .sidebar #filtertitle {
     color: #37474F;
     font-size: 1em;
@@ -517,7 +513,9 @@ button:hover {
     display: inline;
 }
 
-
+.sidebar-img {
+    margin-right: 10px;
+}
 
 #consumer {
     padding-top: 0px;
