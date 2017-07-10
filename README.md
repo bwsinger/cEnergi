@@ -1,4 +1,4 @@
-cenergi.ucdavis.edu
+cenergi.ucdavis.edu/
 
 Maintainer: Bradley Singer <bwsinger@ucdavis.edu>
 
